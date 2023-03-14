@@ -397,6 +397,8 @@ local on_attach = function(_, bufnr)
   end, '[W]orkspace [L]ist Folders')
 
 
+  nmap(']g', [[:Gitsigns next_hunk<cr>]], "Next hunk")
+  nmap('[g', [[:Gitsigns prev_hunk<cr>]], "Previous hunk")
 
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
