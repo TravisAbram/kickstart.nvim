@@ -102,17 +102,18 @@ require('lazy').setup({
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
-      signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
-        changedelete = { text = '~' },
-      },
+      -- signs = {
+      --   add = { text = '+' },
+      --   change = { text = '~' },
+      --   delete = { text = '_' },
+      --   topdelete = { text = '‾' },
+      --   changedelete = { text = '~' },
+      -- },
     },
   },
 
   { -- Theme inspired by Atom
+
     'shaunsingh/nord.nvim',
     priority = 1000,
     config = function()
