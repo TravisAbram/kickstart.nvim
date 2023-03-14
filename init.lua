@@ -396,7 +396,7 @@ local on_attach = function(_, bufnr)
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   end, '[W]orkspace [L]ist Folders')
 
-  nmap('\\', [[:Neotree reveal<cr>]], 'Neotree reveal')
+
 
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
@@ -497,6 +497,7 @@ cmp.setup {
 }
 
 vim.keymap.set('i', 'jk', [[<C-\><C-n>]], {})
+vim.keymap.set('n', '\\', [[:Neotree toggle<cr>]], {desc = 'Neotree toggle'})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
