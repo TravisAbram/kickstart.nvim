@@ -120,7 +120,10 @@ require('lazy').setup({
       vim.cmd.colorscheme 'nord'
     end,
   },
-
+  {
+    'romgrk/barbar.nvim',
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  },
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
