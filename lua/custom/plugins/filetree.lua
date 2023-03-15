@@ -10,6 +10,10 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function ()
-    require('neo-tree').setup {}
+    require('neo-tree').setup {
+      winbar = true,
+      close_if_last_window = true,
+      sort_case_insensitive = true
+    }
   end,
 }
