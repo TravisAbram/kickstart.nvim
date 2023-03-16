@@ -113,7 +113,7 @@ require('lazy').setup({
   },
 
   { -- Theme inspired by Atom
-    'gbprod/nord.nvim',
+    'shaunsingh/nord.nvim',
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'nord'
