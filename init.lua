@@ -513,8 +513,7 @@ cmp.setup {
 }
 
 vim.keymap.set('i', 'jk', [[<C-\><C-n>]], {silent = true})
-vim.keymap.set('n', '\\', [[:Neotree left toggle<cr>]], {desc = 'Neotree toggle', silent = true})
-vim.keymap.set('n', '<leader>g', [[:Neotree float toggle git_status<cr>]], {desc = 'Neotree git status', silent = true})
+vim.keymap.set('n', '\\', [[<cmd>Neotree toggle<cr>]], {desc = 'NvimTree toggle', silent = true})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
