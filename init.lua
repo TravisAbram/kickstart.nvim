@@ -237,6 +237,9 @@ vim.o.termguicolors = true
 -- Hide duplicate insert/visual status
 vim.o.showmode = false
 
+-- Set cursorline
+vim.o.cursorline = true
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
