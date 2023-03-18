@@ -113,16 +113,16 @@ require('lazy').setup({
   },
 
   { -- Theme inspired by Atom
-    'shaunsingh/nord.nvim',
+    'gbprod/nord.nvim',
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'nord'
     end,
   },
-  {
-    'romgrk/barbar.nvim',
-    dependencies = 'nvim-tree/nvim-web-devicons'
-  },
+  -- {
+  --   'romgrk/barbar.nvim',
+  --   dependencies = 'nvim-tree/nvim-web-devicons'
+  -- },
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
