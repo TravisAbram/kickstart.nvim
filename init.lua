@@ -401,6 +401,8 @@ local on_attach = function(_, bufnr)
 
   -- nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
   nmap('gd', [[<cmd>Lspsaga peek_definition<cr>]], '[G]oto [D]efinition')
+  nmap('gt', [[<cmd>Lspsaga peek_type_definition<cr>]], '[G]oto [D]efinition')
+
   nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
   nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
   nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
