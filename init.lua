@@ -371,6 +371,9 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set('n', '<leader>q', [[<cmd>TroubleToggle<cr>]], { desc = "Open diagnostics list", silent = true})
+vim.keymap.set('n', '<leader>sl', [[<cmd>Lspsaga show_line_diagnostics<cr>]], { desc = '[S]how [L]ine diagnostics'})
+vim.keymap.set('n', '<leader>sc', [[<cmd>Lspsaga show_cursor_diagnostics<cr>]], { desc = '[S]how [C]ursor diagnostics'})
+vim.keymap.set('n', '<leader>sb', [[<cmd>Lspsaga show_buf_diagnostics<cr>]], { desc = '[S]how [B]uffer diageostics'})
 
 -- LSP settings.
 --  This function gets run when an LSP connects to a particular buffer.
