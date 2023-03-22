@@ -425,6 +425,9 @@ local on_attach = function(_, bufnr)
   nmap(']g', [[:Gitsigns next_hunk<cr>]], "Next hunk")
   nmap('[g', [[:Gitsigns prev_hunk<cr>]], "Previous hunk")
 
+  nmap('<leader>o', [[<cmd>Lspsaga outline<CR>]], 'Outline')
+  vim.keymap.set({'n', 't'}, '<leader>t', [[<cmd>Lspsaga term_toggle<CR>]], {desc = 'Outline'})
+
   -- Create a command `:Format` local to the LSP buffer
   vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
     vim.lsp.buf.format()
